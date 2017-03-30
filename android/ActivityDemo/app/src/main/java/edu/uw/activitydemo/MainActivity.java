@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button butt = (Button) findViewById(R.id.button);
-        butt.setOnClickListener()
+        butt.setOnClickListener(new View.onClickListeneer() {
+            Log.v(TAG, "STUFF");
+        });
     }
 
     @Override
